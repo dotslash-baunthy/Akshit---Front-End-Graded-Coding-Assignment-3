@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing game</title>
+
+    <!-- Linking CSS style sheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Everything on the page is inside one single container -->
+    <div id="container">
+
+        <!-- Heading on the page. -->
+        <div id="heading">
+            Test your Typing Speed
+        </div>
+
+        <div id="header">
+
+            <div id="wpm">
+                <div class="headerText">WPM</div>
+                <div id="currWpm">100</div>
+            </div>
+
+            <div id="cpm">
+                <div class="headerText">CPM</div>
+                <div id="currCpm">100</div>
+            </div>
+
+            <div id="errors">
+                <div class="headerText">Errors</div>
+                <div id="currErrors">0</div>
+            </div>
+
+            <div id="timer">
+                <div class="headerText">Time</div>
+                <div id="currTime">60s</div>
+            </div>
+
+            <div id="accuracy">
+                <div class="headerText">% Accuracy</div>
+                <div id="currAccuracy">100</div>
+            </div>
+
+        </div>
+
+        <div id="quote">
+            Click on the area below to start the game.
+        </div>
+
+        <textarea id="inputArea" placeholder="start typing here...">
+        </textarea>
+
+        <!-- This will not be shown if test hasn't been started. ID has display: none. -->
+        <button id="restartBtn">
+            Restart
+        </button>
+
+    </div>
+
+    <!-- Linking the Javascript file. This does the actual work. -->
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
